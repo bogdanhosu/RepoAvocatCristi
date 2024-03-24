@@ -1,0 +1,27 @@
+:root {
+	--background-file: url('../Poze/tribunalsijudecatorie.jpg');
+}
+
+html, body {
+    min-height: 100%;
+}
+body{
+
+    background:var(--background-file) no-repeat center center;
+    background-size:cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+#footerStandard{
+        text-align:center;
+        padding: 20px;
+        background-color: #d30505;
+        color: #ffffff;
+        position:fixed ;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+}
