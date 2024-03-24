@@ -1,0 +1,13 @@
+:root {
+	--logo-color: rgb(197, 27, 27);
+	--logo-height: 92px;
+	--logo-width: 272px;
+	--logo-file: url('../Poze/poza1hd.jpeg');
+}
+
+#logo {
+	-webkit-mask-image: var(--logo-file);
+	width: var(--logo-width);
+	height: var(--logo-height);
+	background: var(--logo-color);
+}
