@@ -1,6 +1,6 @@
 :root {
-	--background-file: url('../Poze/tribunalsijudecatorie.jpg');
-    --button-color: rgb(68, 54, 146);
+	--background-file: url('../Poze/background.jpeg');
+    --button-color: rgb(82, 54, 17);
     --button-text-color: rgb(255, 255, 255);
 }
 
@@ -30,7 +30,7 @@ body{
 
 #opened{
     padding: 15px 40px;
-    background-color: rgb(78, 78, 252);
+    background-color: rgb(233, 160, 3);
 }
 
 #headerStandard{
@@ -39,6 +39,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 700px;
     img{
         height: 100px;
     }
@@ -46,35 +47,60 @@ body{
         margin-right: 10px;
     }
 }
-a{
+.buttons{
     margin-left:10px ;
     background-color: var(--button-color);
     border-radius: 10px;
     padding: 15px;
     transition: padding 0.3s ease;
 }
-a:link{
+.buttons:link{
     text-decoration: none;
     color: var(--button-text-color);
 }
-a:visited{
+.buttons:visited{
     color: var(--button-text-color);
 }
-a:hover{
+.buttons:hover{
     transition: padding 0.3s ease;
     font-weight: bold;
     padding: 15px 40px;
 }
 .box{
     display: flex;
-    background-color: rgba(90, 99, 99, 0.425);
+    background-color: rgba(68, 50, 1, 0.425);
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
     border-radius: 15px;
+    color: rgb(255, 255, 255);
     h3{
         padding: 0px 15px;
+    }
+    h2{
+        padding: 0px 15px;
+    }
+    h1{
+        padding: 0px 15px;
+    }
+    p{
+        padding: 0px 15px;
+    }
+    form{
+        padding:30px;
+        input{
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        textarea{
+            border-radius: 15px;
+            max-width: 90%;
+            max-height: 400px;
+        }
+        
     }
 }
 .outfit {
@@ -82,4 +108,13 @@ a:hover{
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
+  }
+  .required{
+    color: rgb(228, 3, 3);
+  }
+  #banner{
+    padding-left: 50px;
+    padding-bottom: 50px;
+    height: 159px;
+    width: 318px;
   }
